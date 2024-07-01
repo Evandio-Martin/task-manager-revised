@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://cdn.oneesports.gg/cdn-data/2021/08/GenshinImpact_MondstadtWallpaperKleeBarbaraNoelle-2000x1125.jpeg');
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.filters {
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.filters button {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+.delete-btn {
+  background-color: rgba(210, 3, 3, 0.87);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.task-details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.task-description {
+  white-space: pre-wrap;
+}
+
+.task-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item h3 {
+  margin: 0;
+}
+
+.task-item p {
+  margin: 5px 0 0 0;
+  color: #666;
+}
+
+.task-item button {
+  margin-left: 10px;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form.edit-task-form {
+  display: flex;
+  flex-direction: column;
+}
+
+form.edit-task-form input[type="text"],
+form.edit-task-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-cancel-button {
+  margin-top: 10px;
+}
