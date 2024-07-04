@@ -9,7 +9,7 @@ const App = () => {
   const [containerHeight, setContainerHeight] = useState('auto');
 
   useEffect(() => {
-    const taskListHeight = tasks.length * 50; // Adjust based on your task item height
+    const taskListHeight = 350 + tasks.length * 100; // Adjust based on your task item height
     setContainerHeight(taskListHeight + 'px');
   }, [tasks]);
 
